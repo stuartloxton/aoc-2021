@@ -4,7 +4,7 @@
     Pass input file as first command line argument
     e.g. dotnet fsi 1-b.fsx input-1.txt
     
-    Same as previous process but before pairing, create a new windows sequence
+    Same as previous process but before pairing, create a new windowed sequence
     and then map to it's sum
 *)
 
