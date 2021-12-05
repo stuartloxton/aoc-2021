@@ -15,7 +15,7 @@ let ans =
     |> Seq.filter(fun x -> x <> "")
     |> Seq.map int
     |> Seq.windowed 3
-    |> Seq.map (fun [|a; b; c|] -> a + b + c)
+    |> Seq.map Seq.reduce +
     |> Seq.pairwise
     |> Seq.fold (fun acc (z1, z2) -> if z2 > z1 then acc + 1 else acc) 0
 
